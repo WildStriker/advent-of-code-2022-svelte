@@ -2,6 +2,8 @@ import type { Day } from '$lib/models/day';
 import { type Readable, readable, get } from 'svelte/store';
 import Day1Part1 from '$lib/components/days/1/Day1Part1.svelte';
 import Day1Part2 from '$lib/components/days/1/Day1Part2.svelte';
+import Day2Part1 from '$lib/components/days/2/Day2Part1.svelte';
+import Day2Part2 from '$lib/components/days/2/Day2Part2.svelte';
 
 function create_days_store() {
 	let days: Day[] = [
@@ -11,6 +13,14 @@ function create_days_store() {
 			parts: [
 				{ id: '1', component: Day1Part1 },
 				{ id: '2', component: Day1Part2 }
+			]
+		},
+		{
+			id: '2',
+			name: 'Rock Paper Scissors',
+			parts: [
+				{ id: '1', component: Day2Part1 },
+				{ id: '2', component: Day2Part2 }
 			]
 		}
 	];
