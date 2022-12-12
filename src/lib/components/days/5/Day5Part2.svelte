@@ -7,8 +7,6 @@
 	let stacks: string[][];
 	$: if (input_data) {
 		stacks = parse_data(input_data, true);
-
-		console.log(stacks);
 	}
 </script>
 
