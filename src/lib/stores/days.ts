@@ -8,6 +8,8 @@ import Day3Part1 from '$lib/components/days/3/Day3Part1.svelte';
 import Day3Part2 from '$lib/components/days/3/Day3Part2.svelte';
 import Day4Part1 from '$lib/components/days/4/Day4Part1.svelte';
 import Day4Part2 from '$lib/components/days/4/Day4Part2.svelte';
+import Day5Part1 from '$lib/components/days/5/Day5Part1.svelte';
+import Day5Part2 from '$lib/components/days/5/Day5Part2.svelte';
 
 function create_days_store() {
 	let days: Day[] = [
@@ -41,6 +43,14 @@ function create_days_store() {
 			parts: [
 				{ id: '1', component: Day4Part1 },
 				{ id: '2', component: Day4Part2 }
+			]
+		},
+		{
+			id: '5',
+			name: 'Supply Stacks',
+			parts: [
+				{ id: '1', component: Day5Part1 },
+				{ id: '2', component: Day5Part2 }
 			]
 		}
 	];
