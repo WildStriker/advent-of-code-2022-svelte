@@ -10,6 +10,8 @@ import Day4Part1 from '$lib/components/days/4/Day4Part1.svelte';
 import Day4Part2 from '$lib/components/days/4/Day4Part2.svelte';
 import Day5Part1 from '$lib/components/days/5/Day5Part1.svelte';
 import Day5Part2 from '$lib/components/days/5/Day5Part2.svelte';
+import Day6Part1 from '$lib/components/days/6/Day6Part1.svelte';
+import Day6Part2 from '$lib/components/days/6/Day6Part2.svelte';
 
 function create_days_store() {
 	let days: Day[] = [
@@ -51,6 +53,14 @@ function create_days_store() {
 			parts: [
 				{ id: '1', component: Day5Part1 },
 				{ id: '2', component: Day5Part2 }
+			]
+		},
+		{
+			id: '6',
+			name: 'Tuning Trouble',
+			parts: [
+				{ id: '1', component: Day6Part1 },
+				{ id: '2', component: Day6Part2 }
 			]
 		}
 	];
