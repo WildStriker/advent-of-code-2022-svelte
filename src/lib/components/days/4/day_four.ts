@@ -31,7 +31,7 @@ class Pair {
 }
 
 export function parse_data(data: String): Pair[] {
-	const lines = data.split('\n');
+	const lines = data.replace(/\r/, '').split('\n');
 
 	let pairs: Pair[] = [];
 

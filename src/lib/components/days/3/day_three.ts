@@ -13,7 +13,7 @@ class Rucksack {
 }
 
 export function parse_data(data: String): Rucksack[] {
-	const lines = data.split('\n');
+	const lines = data.replace(/\r/, '').split('\n');
 
 	let rounds: Rucksack[] = [];
 

@@ -54,7 +54,7 @@ class Round {
 }
 
 export function parse_data(data: String, interupt_pick: OurPickType): Round[] {
-	const lines = data.split('\n');
+	const lines = data.replace(/\r/, '').split('\n');
 
 	let rounds: Round[] = [];
 

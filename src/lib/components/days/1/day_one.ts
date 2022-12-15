@@ -14,7 +14,7 @@ export class Elf {
 }
 
 export function parse_data(data: String): Elf[] {
-	const lines = data.split('\n');
+	const lines = data.replace(/\r/, '').split('\n');
 
 	let current_elf = new Elf();
 	let elfs = [current_elf];
