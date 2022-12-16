@@ -43,7 +43,7 @@ export function parse_data(data: String, preserve_order: boolean) {
 		move_function = _move_first_in_first_out;
 	}
 
-	const lines = data.split('\n').entries();
+	const lines = data.replace(/\r/g, "").split('\n').entries();
 
 	// set up initial stack state
 
